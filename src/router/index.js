@@ -9,7 +9,7 @@ const cart = () =>
 const profile = () =>
     import ('../view/me/me.vue')
 Vue.use(VueRouter)
-const routers = [{
+const routes = [{
     path: '',
     redirect: '/home'
 }, {
@@ -26,9 +26,7 @@ const routers = [{
     component: profile
 }]
 const router = new VueRouter({
-    routers,
+    routes,
     mode: 'history'
 })
-export default {
-    router
-}
+export default router
